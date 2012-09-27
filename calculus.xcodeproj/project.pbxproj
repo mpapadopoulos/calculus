@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02CBD071612229500CEAF65 /* CalculusBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = D02CBD061612229500CEAF65 /* CalculusBrain.m */; };
 		D0577381160B4C83000FD013 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0577380160B4C83000FD013 /* UIKit.framework */; };
 		D0577383160B4C83000FD013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0577382160B4C83000FD013 /* Foundation.framework */; };
 		D0577385160B4C83000FD013 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0577384160B4C83000FD013 /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D02CBD051612229500CEAF65 /* CalculusBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculusBrain.h; sourceTree = "<group>"; };
+		D02CBD061612229500CEAF65 /* CalculusBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculusBrain.m; sourceTree = "<group>"; };
 		D057737C160B4C83000FD013 /* calculus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0577380160B4C83000FD013 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D0577382160B4C83000FD013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +116,8 @@
 		D0577386160B4C83000FD013 /* calculus */ = {
 			isa = PBXGroup;
 			children = (
+				D02CBD051612229500CEAF65 /* CalculusBrain.h */,
+				D02CBD061612229500CEAF65 /* CalculusBrain.m */,
 				D057738F160B4C83000FD013 /* AppDelegate.h */,
 				D0577390160B4C83000FD013 /* AppDelegate.m */,
 				D0577392160B4C83000FD013 /* MainStoryboard_iPhone.storyboard */,
@@ -265,6 +270,7 @@
 				D057738D160B4C83000FD013 /* main.m in Sources */,
 				D0577391160B4C83000FD013 /* AppDelegate.m in Sources */,
 				D057739A160B4C83000FD013 /* ViewController.m in Sources */,
+				D02CBD071612229500CEAF65 /* CalculusBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +454,7 @@
 				D05773B4160B4C84000FD013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05773B5160B4C84000FD013 /* Build configuration list for PBXNativeTarget "calculusTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +463,7 @@
 				D05773B7160B4C84000FD013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
