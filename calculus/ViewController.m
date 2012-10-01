@@ -62,4 +62,12 @@
     self.userEnteredFloatNumber = NO;
 }
 
+- (IBAction)Clear {
+    self.display.text = @"0";
+    //Empty orepand stack
+    [self.brain emptyOperandStack];
+    self.userIsInTheMiddleOfEnteringANumber = NO;
+    self.userEnteredFloatNumber = NO;
+}
+
 @end

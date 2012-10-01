@@ -47,6 +47,19 @@
     } else if ([operation isEqualToString:@"/"]){
         double divisor = [self popOperand];
         if (divisor) result = [self popOperand] / divisor;
+    } else if ([operation isEqualToString:@"sin"]){
+        result = sin([self popOperand]);
+    } else if ([operation isEqualToString:@"cos"]){
+        result = cos([self popOperand]);
+    } else if ([operation isEqualToString:@"sqrt"]){
+        result = sqrt([self popOperand]);
+    } else if ([operation isEqualToString:@"pi"]){
+        //calculate pi or pi * operand
+        if ([self popOperand]){
+            result = M_1_PI * [self popOperand];
+        } else {
+            result = M_1_PI;
+        }
     }
     
     [self pushOperand:result];
@@ -54,4 +67,7 @@
     return result;
 }
 
+-(void)emptyOperandStack{
+    [self.operandStack removeAllObjects];
+}
 @end
